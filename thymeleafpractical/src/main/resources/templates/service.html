@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Include service</title>
+</head>
+<body>
+	<h1>These are the Services</h1>
+	<!-- Going to Bring footer here -->
+	<footer id="hostTag" th:replace="footer::footer1(${title},${subtitle})">
+	</footer>
+</body>
+</html>

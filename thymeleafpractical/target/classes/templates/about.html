@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<h1>This is about thymeleaf</h1>
+	
+	<h2 th:text="${name}"></h2>
+	<h2 th:text="${currentdate}"></h2>
+	
+	<h2>The owner name is <span th:text="${name}"></span> </h2>
+	
+	<div th:with="a=5,b=10,n=${name}">
+	
+	<h2> Value of a is <span th:text="${a}"></span></h2>
+	
+	<h2 th:text="'Value of b is' +${b}"></h2>
+	
+	<h2> Local value of n is <span th:text="${n}"></span></h2>
+	
+	<h2 th:text="'sum of'+${a}+'and'+${b} +'is'+${a+b}"></h2>
+	
+	</div>
+</body>
+</html>

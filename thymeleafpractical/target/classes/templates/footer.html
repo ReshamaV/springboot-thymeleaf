@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<footer id="fragmentTag" th:fragment="footer1(title,subtitle)">
+		<div class="container">
+			<h1>This is Service page</h1>
+			<h1 th:text="${title}"></h1>
+			<h2 th:text="${subtitle}"></h2>
+			<h1>It provide programming knowledge</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet magni deserunt enim atque optio minima sequi ipsam sunt temporibus velit omnis quidem harum fugiat expedita sint alias blanditiis exercitationem nesciunt consequuntur ipsa voluptas explicabo corporis. Cupiditate dicta aliquam culpa pariatur sapiente quam illo enim et quisquam officiis similique excepturi expedita!</p>
+		</div>
+	
+	</footer>
+</body>
+</html>
